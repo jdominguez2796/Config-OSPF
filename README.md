@@ -27,11 +27,7 @@ In this tutorial, we will configure Cisco routers with the OSPF routing protocol
 - Step 1: Configure R1 with the appropriate IP addressed for each interface. Enable each interface. Repeat for R2, R3, and R4.
 - Step 2: Enable the Routing Protocol OSPF on each router.
 - Step 3: Configure a default route on R1 and advertise it the other OSPF routers.
-- Step 4: 
-- Step 5: 
-- Step 6: 
-- Step 7: 
-- Step 8: 
+- Step 4: Confirm network connectivity with ping.
 
 <h2>Actions and Observations</h2>
 
@@ -64,27 +60,9 @@ On R1, we will configure a default route to advertise to the other OSPF routers 
 
 Step 4
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3TGHe98.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-Step 5
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-Step 6
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To confirm network connectivity between the routers, we can do a test ping. On R1, we will ping R4's f1/0 interface. Enter the command "do ping 10.0.24.2". R1 will send R4 4 ICMP Echo requests and R1 will receive 5 ICMP Echo replys. This concludes connectivity between the routers. This concludes this tutorial.
 </p>
 <br />
