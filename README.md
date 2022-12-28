@@ -58,7 +58,7 @@ Step 3
 <img src="https://i.imgur.com/Le894ma.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On R1, we will configure a default route to advertise to the other OSPF routers since it is face the internet. Essentially, a default route is ip 0.0.0.0. We will tell all other routers to send traffic that does not match a destination on their routing table to the default route. In most cases, a default route is used to send traffic to the internet. 
+On R1, we will configure a default route to advertise to the other OSPF routers since it is face the internet. Essentially, a default route is ip 0.0.0.0. We will tell all other routers to send traffic that does not match a destination on their routing table to the default route. In most cases, a default route is used to send traffic to the internet. On R1, we enter the router ospf configuration and enter the command "default-information origiinate". This command advertises the default route to the other OSPF routers. To create the route to be advertised, we enter "ip route 0.0.0.0 0.0.0.0 203.0.113.2". An ip of 0.0.0.0 and subnet mask of 0.0.0.0 so any traffic not in a routers routing table will use this route. Lastly, 203.0.113.2 specifies where this trafics next "hop" or where it will be sent. In this case it is to the internet. On the right, we confirm R4 has this default route in its routing table with the command "do sh ip route".The "*" on the 0.0.0.0/0 route identifies it as the default route.
 </p>
 <br />
 
